@@ -17,10 +17,12 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey.shade300,
-      body: Column(
-        children: [AppbarDB(), const DashboardBody()],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey.shade300,
+        body: Column(
+          children: [AppbarDB(), const DashboardBody()],
+        ),
       ),
     );
   }
